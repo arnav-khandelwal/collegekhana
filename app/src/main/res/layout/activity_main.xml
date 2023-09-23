@@ -12,6 +12,7 @@
         android:layout_height="120dp"
         android:id="@+id/imageView"
         android:layout_marginLeft="40dp"
+        aryan
         android:layout_marginRight="40dp"
         android:adjustViewBounds="false"
         android:src="@drawable/something"
