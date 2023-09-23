@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContraintLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="275dp"
+        android:layout_height="390dp"
+        android:background="@drawable/background_shape"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:flow_lastVerticalBias="0.498"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@tools:sample/avatars"
+            app:srcCompat="@drawable/something" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="cursive"
+            android:text="Fueling Your Campus Life"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/SignwithEmail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background-color="#400000"
+            android:drawableLeft="@drawable/whitemail"
+            android:text="Sign In with Email"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F60505"
+            android:textColorLink="#F60505"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/signwithPhone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background-color="#400000"
+            android:drawableLeft="@drawable/phonewhite"
+            android:shadowColor="#07FF0000"
+            android:text="Sign in with Phone"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F60505"
+            android:textColorLink="#F60505"
+            app:cornerRadius="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="---------------------OR ---------------------"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background-color="#044000"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F60505"
+            android:textColorLink="#F60505"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
