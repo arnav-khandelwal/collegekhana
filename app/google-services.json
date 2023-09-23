@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "224519342798",
+    "firebase_url": "https://collegekhana-8416d-default-rtdb.firebaseio.com",
+    "project_id": "collegekhana-8416d",
+    "storage_bucket": "collegekhana-8416d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224519342798:android:7267faa492602acc269e9f",
+        "android_client_info": {
+          "package_name": "com.example.collegekhana"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHl36ucAaE-3oluP03tAjidNWTdUhlrN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
