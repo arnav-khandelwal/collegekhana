@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 public class MainMenu extends AppCompatActivity {
 
+
     Button signinemail,signinphone,signup;
     ImageView bgimage;
 
