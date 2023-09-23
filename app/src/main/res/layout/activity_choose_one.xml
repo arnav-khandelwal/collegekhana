@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.498">
 
         <Button
-            android:id="@+id/chef"
+            android:id="@+id/college"
             android:layout_width="match_parent"
             android:layout_height="77dp"
             android:layout_marginBottom="40dp"
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_marginTop="40dp"
-            android:text="Enter as User"
+            android:text="Enter as Guest User"
             android:textSize="25sp" />
 
     </LinearLayout>

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class ChooseOne extends AppCompatActivity {
-    Button Chef,Customer,DeliveryPerson;
+    Button College,Customer;
     String type;
     Intent intent;
 
@@ -20,25 +20,20 @@ public class ChooseOne extends AppCompatActivity {
         intent = getIntent();
         type = intent.getStringExtra("Home").toString().trim();
 
-        Chef = (Button) findViewById(R.id.chef);
+        College = (Button) findViewById(R.id.college);
         Customer = (Button) findViewById(R.id.customer);
 
 
-        Chef.setOnClickListener(new View.OnClickListener() {
+        College.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (type.equals("Email")) {
-                    Intent loginemail = new Intent(ChooseOne.this, Cheflogin.class);
+                    Intent loginemail = new Intent(ChooseOne.this, Collegelogin.class);
                     startActivity(loginemail);
                     finish();
                 }
-                if (type.equals("Phone")) {
-                    Intent loginphone = new Intent(ChooseOne.this, Chefloginphone.class);
-                    startActivity(loginphone);
-                    finish();
-                }
                 if (type.equals("SignUp")) {
-                    Intent Register = new Intent(ChooseOne.this, ChefRegistration.class);
+                    Intent Register = new Intent(ChooseOne.this, CollegeRegistration.class);
                     startActivity(Register);
                 }
             }
@@ -53,16 +48,6 @@ public class ChooseOne extends AppCompatActivity {
                     startActivity(loginemailcust);
                     finish();
                 }
-                if (type.equals("Phone")) {
-                    Intent loginphonecust = new Intent(ChooseOne.this, Loginphone.class);
-                    startActivity(loginphonecust);
-                    finish();
-                }
-                if (type.equals("SignUp")) {
-                    Intent Registercust = new Intent(ChooseOne.this, Registration.class);
-                    startActivity(Registercust);
-                }
-
             }
         });
     }

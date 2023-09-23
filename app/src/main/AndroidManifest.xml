@@ -13,22 +13,16 @@
         android:theme="@style/Theme.Collegekhana"
         tools:targetApi="31">
         <activity
-            android:name=".Registration"
-            android:exported="false" />
-        <activity
-            android:name=".Loginphone"
+            android:name=".activity_chef_registration"
             android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".ChefRegistration"
+            android:name=".CollegeRegistration"
             android:exported="false" />
         <activity
-            android:name=".Chefloginphone"
-            android:exported="false" />
-        <activity
-            android:name=".Cheflogin"
+            android:name=".Collegelogin"
             android:exported="false" />
         <activity
             android:name=".ChooseOne"
