@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/collegeHome"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/pendingOrders"
+        android:icon="@drawable/pending_orders"
+        android:title="pending orders"/>
+    <item
+        android:id="@+id/orders"
+        android:icon="@drawable/orders"
+        android:title="Orders"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/post_dish"
+        android:title="post dish"/>
+
+</menu>

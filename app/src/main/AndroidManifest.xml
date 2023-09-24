@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Collegekhana"
         tools:targetApi="31">
         <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".User_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".CollegeForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".College_BottomNavigation"
+            android:exported="false" />
+        <activity
             android:name=".activity_chef_registration"
             android:exported="false" />
         <activity
