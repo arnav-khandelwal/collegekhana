@@ -13,16 +13,14 @@ import android.widget.ImageView;
 public class MainMenu extends AppCompatActivity {
 
 
-    Button signinemail,signinphone,signup;
-    ImageView bgimage;
+    Button signinemail,signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        signinemail=(Button)findViewById(R.id.SignwithEmail);
-        signinphone=(Button)findViewById(R.id.signwithPhone);
+        signinemail=(Button) findViewById(R.id.SignwithEmail);
         signup=(Button)findViewById(R.id.SignUp);
 
         signinemail.setOnClickListener(new View.OnClickListener() {
@@ -35,15 +33,6 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        signinphone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent signphone = new Intent(MainMenu.this,ChooseOne.class);
-                signphone.putExtra("Home","Phone");
-                startActivity(signphone);
-                finish();
-            }
-        });
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

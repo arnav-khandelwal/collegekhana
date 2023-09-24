@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.datatransport.runtime.dagger.Reusable;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
@@ -30,7 +31,7 @@ public class CollegeRegistration extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
 
     String collegename,emailid,password,confpassword;
-    String role="College"
+    String role="College";
 
 
     @Override
@@ -99,7 +100,7 @@ public class CollegeRegistration extends AppCompatActivity {
                                                                 AlertDialog.Builder builder = new AlertDialog.Builder(CollegeRegistration.this);
                                                                 builder.setMessage("You Have Registered! Make Sure To Verify Your Email");
                                                                 builder.setCancelable(false);
-                                                                builder.setPositiveButton("Ok", new DialogInterface().OnClickListener() {
+                                                                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                                                     @Override
                                                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -111,7 +112,7 @@ public class CollegeRegistration extends AppCompatActivity {
                                                                 Alert.show();
                                                             }else{
                                                                 mDialog.dismiss();
-                                                                ReusableCodeForAll.ShowAlert(ChefRegistration.this,"Error",task.getException().getMessage());
+                                                                ReusableCodeForAll.ShowAlert(CollegeRegistration.this,"Error",task.getException().getMessage());
                                                             }
                                                         }
                                                     });
@@ -187,6 +188,4 @@ public class CollegeRegistration extends AppCompatActivity {
         return isValid;
 
     }
-}
-      }
 }
